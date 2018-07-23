@@ -1,0 +1,85 @@
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script src="manhattan.js"></script>
+
+
+    <style>
+    
+   
+    
+        #text {
+            width: 200px;
+            height: 200px;
+            height: 100vh;
+          
+}
+
+        
+        
+        
+        #nyc_img {
+            background-image: url("https://d3exkutavo4sli.cloudfront.net/wp-content/uploads/2017/12/West-Harlem-NYC-Manhattan-1024x768.jpg");
+            height: 1000px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        ::placeholder { 
+            color: white;
+            opacity: 1;
+        }
+        #input{
+            margin-color:black;
+            color: white !important;
+            border: solid 10px blue;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper  blue-grey darken-4">
+            <a href="#!" class="brand-logo white-text" margin="25px"><i></i>Demographic Finder</a>
+            <ul class="right hide-on-med-and-down">
+                <li id="manhattan"> <a href="manhattan.html"> <i class="material-icons-button">Manhattan</i></a></li>
+                <li id="staten"> <a href="staten.html"> <i class="material-icons-button">Staten Island</i></a></li>
+                <li id="bronx"> <a href="bronx.html"> <i class="material-icons-button">Bronx</i></a></li>
+                <li id="brooklyn"> <a href="brooklyn.html"> <i class="material-icons-button">Brooklyn</i></a></li>
+                <li id="queens"> <a href="queens.html"><i class="material-icons-butto">Queens</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="nyc_img">
+        
+    </div>
+    <div id="output">
+        
+    </div>
+    <div id="map">
+        
+    </div>
+    <script src="manhattan.js"></script>
+   <script async defer
+   src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyBa1dfvcXoEUxnHQa3F5fB_pkXIykQ07T4&callback=giveMeTheMap">
+   </script>    
+</body>
